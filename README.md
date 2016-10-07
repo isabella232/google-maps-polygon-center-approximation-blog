@@ -22,7 +22,7 @@ but lower performance.
 ## Examples
 
 The following show two sample polygons where the centroid (blue) of the bounding box (shown as black outline) falls outside the polygon.  
-The algotithn found the nearest point North, South, East or West and decided on a final placement where the red marker lies.
+The algotithm found the nearest point North, South, East or West and decided on a final placement where the red marker lies.
 
 ![demo1](demo1.png)
 
