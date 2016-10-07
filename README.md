@@ -26,6 +26,9 @@ The algotithm found the nearest point North, South, East or West and decided on 
 
 ![demo1](demo1.png)
 
+This example selected the point due East of the centroid because the polygon is much wider than it is high, so the East / West search 
+increments were bigger than the North / South ones, so the Eastern border was discovered first.
+
 ![demo2](demo2.png)
 
 ## Notes
