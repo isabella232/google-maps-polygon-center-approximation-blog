@@ -14,7 +14,19 @@ Find approximate center point of an arbitrary polygon on Google Maps.  Process:
 	* Look at points North, East, South and West of the center at 5% increments of the total height and width of the bounding box
 	* If any of those points is within the area of the polygon, place the marker there and stop looking
 
-This may not be foolproof but should get a point within the polygon that's good enough.  As this moves up and down the bounding box looking for points within the polygon at 5% height increments, it could miss a very thin slice of the polygon that crosses the center line and never find a point... could fix this by using 1% increments and a 50 loop count for higher search "resolution" but lower performance.
+This may not be foolproof but should get a point within the polygon that's good enough.  As this moves up and down the bounding box 
+looking for points within the polygon at 5% height increments, it could miss a very thin slice of the polygon that crosses the 
+center line and never find a point... could fix this by using 1% increments and a 50 loop count for higher search "resolution" 
+but lower performance.
+
+## Examples
+
+The following show two sample polygons where the centroid (blue) of the bounding box (shown as black outline) falls outside the polygon.  
+The algotithn found the nearest point North, South, East or West and decided on a final placement where the red marker lies.
+
+![demo1](demo1.png)
+
+![demo2](demo2.png)
 
 ## Notes
 
