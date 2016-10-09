@@ -35,6 +35,7 @@ var app = {
                 boundsWidth = 0,
                 centerPoint,
                 heightIncr = 0,
+                maxSearchLoops = maxSearchSteps / 2,
                 maxSearchSteps = 10,
                 n = 1,
                 northWest,
@@ -59,7 +60,7 @@ var app = {
                 widthIncr = boundsWidth / maxSearchSteps;
 
                 // Expand out from Centroid and find a point within polygon at 0, 90, 180, 270 degrees
-                for (; n <= maxSearchSteps; n++) {
+                for (; n <= maxSearchLoops; n++) {
                     // Test point North of Centroid
                     testPos = google.maps.geometry.spherical.computeOffset(centerPoint, (heightIncr * n), 0);
                     if (google.maps.geometry.poly.containsLocation(testPos, this)) {
