@@ -35,13 +35,15 @@ var app = {
                 boundsWidth = 0,
                 centerPoint,
                 heightIncr = 0,
-                maxSearchLoops = maxSearchSteps / 2,
+                maxSearchLoops,
                 maxSearchSteps = 10,
                 n = 1,
                 northWest,
                 polygonBounds = this.getBoundingBox(),
                 testPos,
                 widthIncr = 0;
+
+            maxSearchLoops = maxSearchSteps / 2;
 
             // Get polygon Centroid
             centerPoint = polygonBounds.getCenter();
