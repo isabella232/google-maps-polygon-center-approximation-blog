@@ -43,8 +43,6 @@ var app = {
                 testPos,
                 widthIncr = 0;
 
-            maxSearchLoops = maxSearchSteps / 2;
-
             // Get polygon Centroid
             centerPoint = polygonBounds.getCenter();
 
@@ -52,6 +50,8 @@ var app = {
                 // Nothing to do Centroid is in polygon use it as is
                 return centerPoint;
             } else {
+                maxSearchLoops = maxSearchSteps / 2;
+                
                 // Calculate NorthWest point so we can work out height of polygon NW->SE
                 northWest = new google.maps.LatLng(polygonBounds.getNorthEast().lat(), polygonBounds.getSouthWest().lng());
 
