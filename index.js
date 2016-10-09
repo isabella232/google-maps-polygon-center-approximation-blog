@@ -181,7 +181,3 @@ var app = {
         });
     }
 }
-
-window.onload = function() {
-    app.initialize();
-}
