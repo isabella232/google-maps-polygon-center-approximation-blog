@@ -1,6 +1,6 @@
 # Polygon Experiment
 
-Experiments with placing a marker around the center of a polygon.
+Experiments with placing a marker around the center of a polygon.  This repo has an accompanying [blog post](http://moduscreate.com/placing-markers-inside-polygons-with-google-maps/).
 
 ![demo](screenshot.png)
 
